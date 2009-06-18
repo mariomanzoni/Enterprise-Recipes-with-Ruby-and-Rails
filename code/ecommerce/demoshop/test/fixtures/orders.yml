@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  product: MyString
+  total_amount: 1
+
+two:
+  product: MyString
+  total_amount: 1

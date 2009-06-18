@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<definitions name="AccountCheckerInterfaceDescription"
+  targetNamespace="http://www.example.com/wsdl/AccountChecker.wsdl"
+  xmlns="http://schemas.xmlsoap.org/wsdl/"
+  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:tns="http://www.example.com/wsdl/AccountChecker.wsdl"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <message name="check_account_in">
+    <part name="bic"  type="xsd:string"/>
+    <part name="iban" type="xsd:string"/>
+  </message>
+
+  <message name="check_account_out">
+    <part name="status" type="xsd:integer"/>
+    <part name="name"   type="xsd:boolean"/>
+  </message>
+ 
+  <portType name="AccountCheckerInterface"> <!-- <label id="code.web_services.soap.portType"/> -->
+    <operation name="check_account">
+      <input message="tns:check_account_in"/>
+      <output message="tns:check_account_out"/>
+    </operation>
+  </portType>
+   
+  <binding name="AccountCheckerBinding"
+           type="tns:AccountCheckerInterface">
+    <soap:binding style="rpc" 
+                  transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="check_account">
+      <soap:operation soapAction="check_account"/>
+      <input>
+        <soap:body
+              encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+              namespace="urn:AccountChecker"
+              use="encoded"/>
+      </input>
+      <output>
+        <soap:body
+              encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+              namespace="urn:AccountChecker"
+              use="encoded"/>
+      </output>
+    </operation>
+  </binding>
+  
+  <service name="AccountCheckerService">
+    <documentation>
+      A service for checking bank accounts.
+    </documentation>
+    <port binding="tns:AccountCheckerBinding"
+          name="AccountCheckerPort">
+      <soap:address location="http://localhost:2000"/>
+    </port>
+  </service>
+</definitions>

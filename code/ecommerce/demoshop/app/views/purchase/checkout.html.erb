@@ -1,0 +1,34 @@
+<table>
+<% form_for :creditcard, @creditcard, :url => { :action => 'purchase' } do |f| %>
+  <tr>
+    <td><label>Card Number</label></td>
+    <td><%= f.text_field :number %></td>
+  </tr>
+  <tr>
+    <td><label>Card Type</label></td>
+    <td><%= f.select :type, [['Visa', 'visa'], ['MasterCard', 'master']] %></td>
+  </tr>
+  <tr>
+    <td><label>Expiration Date</label></td>
+  <td>
+    <%= f.select :month, (1 .. 12) %>
+    <%= f.select :year, (Time.now.year .. 10.years.from_now.year) %>
+  </td>
+  </tr>
+  <tr>
+    <td><label>CVV</label></td>
+    <td><%= f.text_field :verification_value, :size => 4 %></td>
+  </tr>
+  <tr>
+    <td><label>First Name</label></td>
+    <td><%= f.text_field :first_name %></td>
+  </tr>
+  <tr>
+    <td><label>Last Name</label></td>
+    <td><%= f.text_field :last_name %></td>
+  </tr>
+  <tr>
+    <td colspan='2'><%= submit_tag 'Purchase' %></td>
+  </tr>
+<% end %>
+</table>

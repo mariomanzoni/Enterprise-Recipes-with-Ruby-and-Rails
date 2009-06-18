@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<!--
+ ! Excerpted from "Enterprise Recipes for Ruby and Rails",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/msenr for more book information.
+-->
+<order id='47110815' date='2008-07-27'>
+  <customer-no>94429999</customer-no>
+  <items>
+    <item product-id='42-007-x'>
+      <name>Beer</name>
+      <quantity>6</quantity>
+    </item>
+    <item product-id='16-666-x'>
+      <name>Nuts &amp; Gum</name>
+      <quantity>1</quantity>
+    </item>
+  </items>
+</order>

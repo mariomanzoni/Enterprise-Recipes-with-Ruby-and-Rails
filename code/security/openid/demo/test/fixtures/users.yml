@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  hashed_password: MyString
+  identity_url: MyString
+
+two:
+  name: MyString
+  hashed_password: MyString
+  identity_url: MyString

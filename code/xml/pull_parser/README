@@ -1,0 +1,17 @@
+This directory contains all files used in the "Handle Large XML Documents"
+recipe.
+
+To start the demo do the following:
+
+$ cd demo
+$ ruby script/console 
+Loading development environment (Rails 2.1.0)
+>> who = '+4912345678'; ts = Time.utc(2008, 7, 19)
+=> Sat Jul 19 00:00:00 UTC 2008
+>> CallDetailRecord.find_all(who, ts).each do |cdr|
+?>   puts cdr.timestamp + ": #{cdr.to}"
+>> end
+
+Happy Hacking!
+
+Maik

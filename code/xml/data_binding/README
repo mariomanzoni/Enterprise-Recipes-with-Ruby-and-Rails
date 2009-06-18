@@ -1,0 +1,22 @@
+This directory contains all sample code used in the following recipes:
+
+* "XML Data Binding on Steroids"
+
+$ cd xmlsimple_demo
+$ ruby script/console 
+Loading development environment (Rails 2.1.0)
+>> p Order.find('47110815')
+
+
+* "Use XML Files as Models"
+
+$ cd invoice_app
+$ ruby script/server
+
+Point your browser to
+
+http://localhost:3000/invoice/show/94429999
+
+Happy Hacking!
+
+Maik

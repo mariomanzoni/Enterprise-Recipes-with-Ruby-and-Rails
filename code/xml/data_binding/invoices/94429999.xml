@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<!--
+ ! Excerpted from "Enterprise Recipes for Ruby and Rails",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/msenr for more book information.
+-->
+<invoices>
+  <invoice invoice-no='47110815'>
+    <invoice-date>2008-09-15</invoice-date>
+    <due-date>2008-10-01</due-date>
+    <customer customer-no='94429999'>
+      <name>Maik Schmidt</name>
+      <address>
+        <street>Musterstraße 42</street>
+        <city>Musterstadt</city>
+        <postal-code>12345</postal-code>
+      </address>
+    </customer>
+    <net-amount currency='USD' amount='7.73'/>
+    <gross-amount currency='USD' amount='8.97'/>
+    <vat rate='16.0' currency='USD' amount='1.24'/>
+    <items>
+      <item product-id='42-007-x'>
+        <name>Beer</name>
+        <unit-price currency='USD' amount='0.99'/>
+        <quantity>6</quantity>
+        <net-amount currency='USD' amount='5.94'/>
+        <gross-amount currency='USD' amount='6.89'/>
+        <vat rate='16.0'/>
+      </item>
+      <item product-id='16-666-x'>
+        <name>Nuts &amp; Gum</name>
+        <unit-price currency='USD' amount='1.79'/>
+        <quantity>1</quantity>
+        <net-amount currency='USD' amount='1.79'/>
+        <gross-amount currency='USD' amount='2.08'/>
+        <vat rate='16.0'/>
+      </item>
+    </items>
+  </invoice>
+</invoices>

@@ -1,0 +1,35 @@
+This folder contains several examples demonstrating the usage of StompConnect.
+
+To start the ActiveMQ sample, do the following:
+
+In a separate terminal:
+
+$ bin/activemq
+
+In a separate terminal:
+
+$ ./start_receiver_activemq.sh
+
+In a separate terminal:
+
+$ ./stomp_connector.sh
+
+In a separate terminal:
+
+$ ruby sender.rb
+
+---
+
+To start the ActiveMQ sample with integrated StompConnect, do the following:
+
+In a separate terminal:
+
+$ bin/activemq
+
+In a separate terminal:
+
+$ ./start_receiver_activemq_with_stomp.sh
+
+In a separate terminal:
+
+$ ruby sender.rb

@@ -1,0 +1,25 @@
+<!--
+ ! Excerpted from "Enterprise Recipes for Ruby and Rails",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/msenr for more book information.
+-->
+<h1>ActiveMessaging Test Harness</h1>
+
+<% form_tag :action => 'index' do |f| %>
+<p>
+	<label for="destination">Destination:</label><br/>
+	(broker: name => 'destination')<br/>
+	<select name="destination">
+		<option value=""></option>
+		<%= options_from_collection_for_select @destinations, 'name', 'to_s', @destination %>
+	</select>
+</p>
+<p>
+	<label for="message">Message:</label><br/>
+	<%= text_area_tag :message, @message, :size=>'50x10' %> 
+</p>
+<%= submit_tag "submit" %>
+<% end -%>

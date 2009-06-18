@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+ ! Excerpted from "Enterprise Recipes for Ruby and Rails",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/msenr for more book information.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:lang="http://www.springframework.org/schema/lang"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/lang
+http://www.springframework.org/schema/lang/spring-lang-2.0.xsd">
+
+  
+  <bean id="messageReceiver"
+    class="com.example.messaging.MessageReceiver"/>
+  
+  <bean id="connectionFactory"
+        class="org.apache.activemq.ActiveMQConnectionFactory">
+    <property name="brokerURL" value="tcp://localhost:61616" />
+  </bean>
+  
+  <bean id="testQueue"
+    class="
+    org.springframework.jms.listener.DefaultMessageListenerContainer">
+    <property name="connectionFactory"   ref="connectionFactory" />
+    <property name="messageListener"     ref="messageReceiver" />
+    <property name="destinationName"     value="testqueue" />
+    <property name="concurrentConsumers" value="5" />
+    <property name="sessionTransacted"   value="false"/>
+  </bean>
+  
+</beans>

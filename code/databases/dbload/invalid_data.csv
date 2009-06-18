@@ -1,0 +1,4 @@
+label;street;postal_code;city;country
+Location 1;Musterstraße 42;12345;Musterstadt;DE
+Location 2;1234 Sample Street;;Sample City;GB
+Location 3;;66666;Manchester;GB

@@ -1,0 +1,8 @@
+Description:
+    Generates an InfoController for monitoring a web application.
+
+Example:
+    ./script/generate info_controller
+
+    This will create:
+        app/controllers/info_controller.rb

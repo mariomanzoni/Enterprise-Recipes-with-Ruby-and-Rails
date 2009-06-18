@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+ ! Excerpted from "Enterprise Recipes for Ruby and Rails",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/msenr for more book information.
+-->
+<cdr-list date='2007-09-27'>
+  <cdr from='+42111111111' timestamp='00:23:39'
+       to='+4912345678'    duration='720'/>
+  <cdr from='+32012345678' timestamp='00:23:40'
+       to='+4912345678'    duration='907'/>
+  <cdr from='+4912345678' timestamp='00:24:02'
+       to='+42111111111'  duration='808'/>
+  <cdr from='+019999999' timestamp='00:25:00'
+       to='+32012345678' duration='1051'/>
+  <!-- ... -->
+  <cdr from='+019999999' timestamp='23:02:17'
+       to='+4912345678'  duration='574'/>
+  <cdr from='+4912345678' timestamp='23:02:18'
+       to='+42111111111'  duration='880'/>
+  <cdr from='+4912345678' timestamp='23:43:29'
+       to='+4912345678'   duration='1137'/>
+  <cdr from='+42111111111' timestamp='23:44:15'
+       to='+4912345678'    duration='214'/>
+</cdr-list>

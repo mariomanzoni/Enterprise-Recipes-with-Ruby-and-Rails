@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<!--
+ ! Excerpted from "Enterprise Recipes for Ruby and Rails",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/msenr for more book information.
+-->
+<cc-xactions date='20080729'>
+  <cc-xaction id='100001' cc-ref='2537403' type='credit' amount='12.00'>
+    <text>Monthly bill.</text>
+  </cc-xaction>
+  <!-- ... -->
+  <cc-xaction id='400224' cc-ref='95932' type='purchase' amount='19.99'>
+    <text>A new book.</text>
+  </cc-xaction>
+</cc-xactions>

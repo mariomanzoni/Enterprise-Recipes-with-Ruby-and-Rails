@@ -1,0 +1,1279 @@
+<!--
+ ! Excerpted from "Enterprise Recipes for Ruby and Rails",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/msenr for more book information.
+-->
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+
+    Methods
+
+  -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Methods</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="rdoc-style.css" type="text/css" />
+  <base target="docwin" />
+</head>
+<body>
+<div id="index">
+  <h1 class="section-bar">Methods</h1>
+  <div id="index-entries">
+
+    <a href="classes/Spec/Matchers/BaseOperatorMatcher.html#M000442">< (Spec::Matchers::BaseOperatorMatcher)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000593"><< (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Matchers/BaseOperatorMatcher.html#M000443"><= (Spec::Matchers::BaseOperatorMatcher)</a><br />
+
+    <a href="classes/Spec/Mocks/Mock.html#M000134">== (Spec::Mocks::Mock)</a><br />
+
+    <a href="classes/Spec/Mocks/HashIncludingConstraint.html#M000039">== (Spec::Mocks::HashIncludingConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/NoArgsConstraint.html#M000109">== (Spec::Mocks::NoArgsConstraint)</a><br />
+
+    <a href="classes/Spec/Matchers/BaseOperatorMatcher.html#M000437">== (Spec::Matchers::BaseOperatorMatcher)</a><br />
+
+    <a href="classes/Spec/Mocks/AnyArgConstraint.html#M000114">== (Spec::Mocks::AnyArgConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/BooleanArgConstraint.html#M000104">== (Spec::Mocks::BooleanArgConstraint)</a><br />
+
+    <a href="classes/Spec/Matchers/BaseOperatorMatcher.html#M000438">=== (Spec::Matchers::BaseOperatorMatcher)</a><br />
+
+    <a href="classes/Spec/Matchers/BaseOperatorMatcher.html#M000439">=~ (Spec::Matchers::BaseOperatorMatcher)</a><br />
+
+    <a href="classes/Spec/Matchers/BaseOperatorMatcher.html#M000440">> (Spec::Matchers::BaseOperatorMatcher)</a><br />
+
+    <a href="classes/Spec/Matchers/BaseOperatorMatcher.html#M000441">>= (Spec::Matchers::BaseOperatorMatcher)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000558">And (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000582">Given (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000555">Given (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000554">GivenScenario (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000581">GivenScenario (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Story/Runner/ScenarioCollector.html#M000460">Scenario (Spec::Story::Runner::ScenarioCollector)</a><br />
+
+    <a href="classes/Spec/Story/Extensions/Main.html#M000559">Story (Spec::Story::Extensions::Main)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryRunner.html#M000511">Story (Spec::Story::Runner::StoryRunner)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000584">Then (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000557">Then (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000556">When (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000583">When (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Story/Story.html#M000596">[] (Spec::Story::Story)</a><br />
+
+    <a href="classes/Spec/Story/Runner/PlainTextStoryRunner.html#M000517">[]= (Spec::Story::Runner::PlainTextStoryRunner)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMethods.html#M000179">__full_description (Spec::Example::ExampleMethods)</a><br />
+
+    <a href="classes/Spec/Adapters/RubyEngine.html#M000215">adapter (Spec::Adapters::RubyEngine)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000589">add (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Mocks/Space.html#M000125">add (Spec::Mocks::Space)</a><br />
+
+    <a href="classes/Spec/Runner/Reporter.html#M000364">add_example_group (Spec::Runner::Reporter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseFormatter.html#M000266">add_example_group (Spec::Runner::Formatter::BaseFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/SpecdocFormatter.html#M000260">add_example_group (Spec::Runner::Formatter::SpecdocFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000312">add_example_group (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/NestedTextFormatter.html#M000301">add_example_group (Spec::Runner::Formatter::NestedTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000332">add_example_group (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000544">add_listener (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Story/Runner/ScenarioRunner.html#M000508">add_listener (Spec::Story::Runner::ScenarioRunner)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryRunner.html#M000513">add_listener (Spec::Story::Runner::StoryRunner)</a><br />
+
+    <a href="classes/Spec/Mocks/Proxy.html#M000044">add_message_expectation (Spec::Mocks::Proxy)</a><br />
+
+    <a href="classes/Spec/Mocks/Proxy.html#M000045">add_negative_message_expectation (Spec::Mocks::Proxy)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator/Story.html#M000540">add_scenario (Spec::Story::Runner::StoryMediator::Story)</a><br />
+
+    <a href="classes/Spec/Example/SharedExampleGroup.html#M000192">add_shared_example_group (Spec::Example::SharedExampleGroup)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator/Scenario.html#M000536">add_step (Spec::Story::Runner::StoryMediator::Scenario)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser.html#M000465">add_story_line (Spec::Story::Runner::StoryParser)</a><br />
+
+    <a href="classes/Spec/Mocks/Proxy.html#M000046">add_stub (Spec::Mocks::Proxy)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000592">add_to (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator.html#M000530">add_to_last (Spec::Story::Runner::StoryMediator)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser.html#M000472">add_to_last (Spec::Story::Runner::StoryParser)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000063">advise (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000166">after (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Example/Configuration.html#M000204">after (Spec::Example::Configuration)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMethods.html#M000184">after_example (Spec::Example::ExampleMethods)</a><br />
+
+    <a href="classes/Spec/Mocks/BaseExpectation.html#M000082">and_raise (Spec::Mocks::BaseExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/BaseExpectation.html#M000081">and_return (Spec::Mocks::BaseExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/BaseExpectation.html#M000083">and_throw (Spec::Mocks::BaseExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/BaseExpectation.html#M000084">and_yield (Spec::Mocks::BaseExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/ArgumentConstraintMatchers.html#M000033">any_args (Spec::Mocks::ArgumentConstraintMatchers)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000070">any_number_of_times (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/ArgumentConstraintMatchers.html#M000034">anything (Spec::Mocks::ArgumentConstraintMatchers)</a><br />
+
+    <a href="classes/Spec/Example/Configuration.html#M000205">append_after (Spec::Example::Configuration)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000167">append_after (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Example/Configuration.html#M000201">append_before (Spec::Example::Configuration)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000163">append_before (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Regexp.html#M000002">arg_regexp (Regexp)</a><br />
+
+    <a href="classes/String.html#M000006">arg_regexp (String)</a><br />
+
+    <a href="classes/Object.html#M000004">args_and_options (Object)</a><br />
+
+    <a href="classes/Spec/Story/Story.html#M000598">assign_steps_to (Spec::Story::Story)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000067">at_least (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000068">at_most (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Rake/SpecTask.html#M000449">attr_accessor (Spec::Rake::SpecTask)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000291">backtrace_line (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/TextMateFormatter.html#M000299">backtrace_line (Spec::Runner::Formatter::TextMateFormatter)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000411">be (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000412">be_close (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000164">before (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Example/Configuration.html#M000202">before (Spec::Example::Configuration)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMethods.html#M000183">before_example (Spec::Example::ExampleMethods)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000298">blue (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Mocks/ArgumentConstraintMatchers.html#M000035">boolean (Spec::Mocks::ArgumentConstraintMatchers)</a><br />
+
+    <a href="classes/Spec/Example/ModuleInclusionWarnings/MethodDispatcher.html#M000143">call (Spec::Example::ModuleInclusionWarnings::MethodDispatcher)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000413">change (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec/Mocks/ArgumentExpectation.html#M000123">check_args (Spec::Mocks::ArgumentExpectation)</a><br />
+
+    <a href="classes/Spec/Example/ModuleReopeningFix.html#M000145">child_modules (Spec::Example::ModuleReopeningFix)</a><br />
+
+    <a href="classes/Spec/Runner/BacktraceTweaker.html#M000410">clean_up_double_slashes (Spec::Runner::BacktraceTweaker)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000590">clear (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Story/StepMother.html#M000576">clear (Spec::Story::StepMother)</a><br />
+
+    <a href="classes/Spec/Matchers/ModuleMethods.html#M000428">clear_generated_description (Spec::Matchers::ModuleMethods)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseFormatter.html#M000275">close (Spec::Runner::Formatter::BaseFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000287">close (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000235">collected_steps (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/PlainTextFormatter.html#M000232">collected_steps (Spec::Runner::Formatter::Story::PlainTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000292">colour (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000337">colour= (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000289">colour? (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000284">colourise (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/State.html#M000501">comment (Spec::Story::Runner::StoryParser::State)</a><br />
+
+    <a href="classes/Spec/Runner.html#M000216">configure (Spec::Runner)</a><br />
+
+    <a href="classes/Spec/Runner/SpecParser.html#M000386">consider_example_for_best_match (Spec::Runner::SpecParser)</a><br />
+
+    <a href="classes/Spec/Runner/SpecParser.html#M000385">consider_example_groups_for_best_match (Spec::Runner::SpecParser)</a><br />
+
+    <a href="classes/Autotest/Rspec.html#M000008">consolidate_failures (Autotest::Rspec)</a><br />
+
+    <a href="classes/Spec/Mocks/ArgumentExpectation.html#M000124">constraints_match? (Spec::Mocks::ArgumentExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/OrderGroup.html#M000131">consume (Spec::Mocks::OrderGroup)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000151">context (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Extensions/Main.html#M000452">context (Spec::Extensions::Main)</a><br />
+
+    <a href="classes/Spec/Expectations/Differs/Default.html#M000022">context_lines (Spec::Expectations::Differs::Default)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/SnippetExtractor/NullConverter.html#M000250">convert (Spec::Runner::Formatter::SnippetExtractor::NullConverter)</a><br />
+
+    <a href="classes/Spec/Mocks/ArgumentExpectation.html#M000121">convert_constraint (Spec::Mocks::ArgumentExpectation)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000542">create (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupFactory.html#M000189">create_example_group (Spec::Example::ExampleGroupFactory)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser.html#M000468">create_given (Spec::Story::Runner::StoryParser)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator.html#M000525">create_given (Spec::Story::Runner::StoryMediator)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser.html#M000469">create_given_scenario (Spec::Story::Runner::StoryParser)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator.html#M000526">create_given_scenario (Spec::Story::Runner::StoryMediator)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000594">create_matcher (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser.html#M000467">create_scenario (Spec::Story::Runner::StoryParser)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator.html#M000524">create_scenario (Spec::Story::Runner::StoryMediator)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator.html#M000523">create_story (Spec::Story::Runner::StoryMediator)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser.html#M000466">create_story (Spec::Story::Runner::StoryParser)</a><br />
+
+    <a href="classes/Spec/Story/Runner.html#M000456">create_story_runner (Spec::Story::Runner)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator.html#M000528">create_then (Spec::Story::Runner::StoryMediator)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser.html#M000471">create_then (Spec::Story::Runner::StoryParser)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator.html#M000527">create_when (Spec::Story::Runner::StoryMediator)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser.html#M000470">create_when (Spec::Story::Runner::StoryParser)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/NestedTextFormatter.html#M000305">current_indentation (Spec::Runner::Formatter::NestedTextFormatter)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator/Story.html#M000541">current_scenario (Spec::Story::Runner::StoryMediator::Story)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000350">custom_runner (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000351">custom_runner? (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupFactory.html#M000187">default (Spec::Example::ExampleGroupFactory)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000355">default_differ (Spec::Runner::Options)</a><br />
+
+    <a href="classes/RCov/VerifyTask.html#M000011">define (RCov::VerifyTask)</a><br />
+
+    <a href="classes/Test/Unit/TestSuiteAdapter.html#M000614">delete (Test::Unit::TestSuiteAdapter)</a><br />
+
+    <a href="classes/Spec/Extensions/Main.html#M000451">describe (Spec::Extensions::Main)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000150">describe (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/NestedTextFormatter.html#M000306">described_example_group_chain (Spec::Runner::Formatter::NestedTextFormatter)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000160">described_type (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Mocks/NoArgsConstraint.html#M000108">description (Spec::Mocks::NoArgsConstraint)</a><br />
+
+    <a href="classes/Spec/Matchers/SimpleMatcher.html#M000432">description (Spec::Matchers::SimpleMatcher)</a><br />
+
+    <a href="classes/Spec/Matchers/BaseOperatorMatcher.html#M000445">description (Spec::Matchers::BaseOperatorMatcher)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000159">description (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Mocks/AnyArgsConstraint.html#M000112">description (Spec::Mocks::AnyArgsConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/DuckTypeArgConstraint.html#M000102">description (Spec::Mocks::DuckTypeArgConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/HashIncludingConstraint.html#M000041">description (Spec::Mocks::HashIncludingConstraint)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMethods.html#M000178">description (Spec::Example::ExampleMethods)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000148">description_text (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupFactory.html#M000190">determine_superclass (Spec::Example::ExampleGroupFactory)</a><br />
+
+    <a href="classes/Spec/Expectations/Differs/Default.html#M000020">diff_as_object (Spec::Expectations::Differs::Default)</a><br />
+
+    <a href="classes/Spec/Expectations/Differs/Default.html#M000019">diff_as_string (Spec::Expectations::Differs::Default)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000348">differ_class= (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Story/Runner.html#M000458">dry_run (Spec::Story::Runner)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000551">dry_run (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000290">dry_run? (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Mocks/ArgumentConstraintMatchers.html#M000032">duck_type (Spec::Mocks::ArgumentConstraintMatchers)</a><br />
+
+    <a href="classes/Spec/Runner/Reporter.html#M000371">dump (Spec::Runner::Reporter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseFormatter.html#M000272">dump_failure (Spec::Runner::Formatter::BaseFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000283">dump_failure (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/FailingExamplesFormatter.html#M000252">dump_failure (Spec::Runner::Formatter::FailingExamplesFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000321">dump_failure (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/FailingExampleGroupsFormatter.html#M000328">dump_failure (Spec::Runner::Formatter::FailingExampleGroupsFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseFormatter.html#M000274">dump_pending (Spec::Runner::Formatter::BaseFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000286">dump_pending (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseFormatter.html#M000273">dump_summary (Spec::Runner::Formatter::BaseFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000322">dump_summary (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/FailingExamplesFormatter.html#M000253">dump_summary (Spec::Runner::Formatter::FailingExamplesFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000285">dump_summary (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/FailingExampleGroupsFormatter.html#M000329">dump_summary (Spec::Runner::Formatter::FailingExampleGroupsFormatter)</a><br />
+
+    <a href="classes/Spec/Story/StepMother.html#M000577">empty? (Spec::Story::StepMother)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000591">empty? (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Test/Unit/TestSuiteAdapter.html#M000615">empty? (Test::Unit::TestSuiteAdapter)</a><br />
+
+    <a href="classes/Spec/Runner/Reporter.html#M000370">end (Spec::Runner::Reporter)</a><br />
+
+    <a href="classes/Spec/Adapters/RubyEngine.html#M000214">engine (Spec::Adapters::RubyEngine)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/State.html#M000499">eof (Spec::Story::Runner::StoryParser::State)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/StoryState.html#M000490">eof (Spec::Story::Runner::StoryParser::StoryState)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000414">eql (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000415">equal (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000550">errors (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000553">errors (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMethods.html#M000181">eval_block (Spec::Example::ExampleMethods)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/State.html#M000496">event (Spec::Story::Runner::StoryParser::State)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/WhenState.html#M000476">event (Spec::Story::Runner::StoryParser::WhenState)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/StoryState.html#M000487">event (Spec::Story::Runner::StoryParser::StoryState)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000066">exactly (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/SpecdocFormatter.html#M000261">example_failed (Spec::Runner::Formatter::SpecdocFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/ProgressBarFormatter.html#M000276">example_failed (Spec::Runner::Formatter::ProgressBarFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/FailingExamplesFormatter.html#M000251">example_failed (Spec::Runner::Formatter::FailingExamplesFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/NestedTextFormatter.html#M000302">example_failed (Spec::Runner::Formatter::NestedTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseFormatter.html#M000269">example_failed (Spec::Runner::Formatter::BaseFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/FailingExampleGroupsFormatter.html#M000327">example_failed (Spec::Runner::Formatter::FailingExampleGroupsFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Reporter.html#M000368">example_failed (Spec::Runner::Reporter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000316">example_failed (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Reporter.html#M000366">example_finished (Spec::Runner::Reporter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000309">example_group_number (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMatcher.html#M000210">example_group_regex (Spec::Example::ExampleMatcher)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMatcher.html#M000212">example_group_regex_not_considering_modules (Spec::Example::ExampleMatcher)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMatcher.html#M000211">example_group_with_before_all_regexp (Spec::Example::ExampleMatcher)</a><br />
+
+    <a href="classes/Spec/Runner/ExampleGroupRunner.html#M000407">example_groups (Spec::Runner::ExampleGroupRunner)</a><br />
+
+    <a href="classes/Test/Unit/TestCase.html#M000617">example_method? (Test::Unit::TestCase)</a><br />
+
+    <a href="classes/Spec/Runner/Reporter/Failure.html#M000376">example_name (Spec::Runner::Reporter::Failure)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000310">example_number (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseFormatter.html#M000268">example_passed (Spec::Runner::Formatter::BaseFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/SpecdocFormatter.html#M000262">example_passed (Spec::Runner::Formatter::SpecdocFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000315">example_passed (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/NestedTextFormatter.html#M000303">example_passed (Spec::Runner::Formatter::NestedTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/ProgressBarFormatter.html#M000277">example_passed (Spec::Runner::Formatter::ProgressBarFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/ProfileFormatter.html#M000257">example_passed (Spec::Runner::Formatter::ProfileFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseFormatter.html#M000270">example_pending (Spec::Runner::Formatter::BaseFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/ProgressBarFormatter.html#M000278">example_pending (Spec::Runner::Formatter::ProgressBarFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/NestedTextFormatter.html#M000304">example_pending (Spec::Runner::Formatter::NestedTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/SpecdocFormatter.html#M000263">example_pending (Spec::Runner::Formatter::SpecdocFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000317">example_pending (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000282">example_pending (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMatcher.html#M000213">example_regexp (Spec::Example::ExampleMatcher)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000314">example_started (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Reporter.html#M000365">example_started (Spec::Runner::Reporter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseFormatter.html#M000267">example_started (Spec::Runner::Formatter::BaseFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/ProfileFormatter.html#M000256">example_started (Spec::Runner::Formatter::ProfileFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000335">examples_run? (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000347">examples_should_be_run? (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000336">examples_should_not_be_run (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMethods.html#M000175">execute (Spec::Example::ExampleMethods)</a><br />
+
+    <a href="classes/Spec/Example/SharedExampleGroup.html#M000196">execute_in_class_hierarchy (Spec::Example::SharedExampleGroup)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000416">exist (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec.html#M000014">exit? (Spec)</a><br />
+
+    <a href="classes/Spec/Runner/Reporter/Failure.html#M000375">expectation_not_met? (Spec::Runner::Reporter::Failure)</a><br />
+
+    <a href="classes/Spec/Mocks/BaseExpectation.html#M000080">expected_args (Spec::Mocks::BaseExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000057">expected_messages_received? (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Matchers/SimpleMatcher.html#M000435">explanation (Spec::Matchers::SimpleMatcher)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000318">extra_failure_content (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Matchers/BaseOperatorMatcher.html#M000444">fail_with_message (Spec::Matchers::BaseOperatorMatcher)</a><br />
+
+    <a href="classes/Spec/Runner/Reporter.html#M000367">failure (Spec::Runner::Reporter)</a><br />
+
+    <a href="classes/Spec/Matchers/SimpleMatcher.html#M000433">failure_message (Spec::Matchers::SimpleMatcher)</a><br />
+
+    <a href="classes/Spec/Matchers/Exist.html#M000447">failure_message (Spec::Matchers::Exist)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000346">files_to_load (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Story/StepMother.html#M000575">find (Spec::Story::StepMother)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000580">find (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Example/SharedExampleGroup.html#M000193">find_shared_example_group (Spec::Example::SharedExampleGroup)</a><br />
+
+    <a href="classes/Spec/Runner/ExampleGroupRunner.html#M000404">finish (Spec::Runner::ExampleGroupRunner)</a><br />
+
+    <a href="classes/Test/Unit/UI/Console/TestRunner.html#M000607">finished (Test::Unit::UI::Console::TestRunner)</a><br />
+
+    <a href="classes/Test/Unit/UI/Console/TestRunner.html#M000606">finished_with_rspec (Test::Unit::UI::Console::TestRunner)</a><br />
+
+    <a href="classes/Spec/Expectations/Differs/Default.html#M000021">format (Spec::Expectations::Differs::Default)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000288">format_backtrace (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000341">formatters (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000241">found_scenario (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000064">generate_error (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Matchers/ModuleMethods.html#M000429">generated_description (Spec::Matchers::ModuleMethods)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupFactory.html#M000188">get (Spec::Example::ExampleGroupFactory)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/GivenState.html#M000503">given (Spec::Story::Runner::StoryParser::GivenState)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000586">given (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/StoryState.html#M000486">given (Spec::Story::Runner::StoryParser::StoryState)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/State.html#M000494">given (Spec::Story::Runner::StoryParser::State)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000585">given_scenario (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/State.html#M000495">given_scenario (Spec::Story::Runner::StoryParser::State)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000325">global_scripts (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000326">global_styles (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000294">green (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Expectations/NegativeExpectationMatcherHandler.html#M000024">handle_matcher (Spec::Expectations::NegativeExpectationMatcherHandler)</a><br />
+
+    <a href="classes/Spec/Expectations/ExpectationMatcherHandler.html#M000025">handle_matcher (Spec::Expectations::ExpectationMatcherHandler)</a><br />
+
+    <a href="classes/Spec/Mocks/OrderGroup.html#M000132">handle_order_constraint (Spec::Mocks::OrderGroup)</a><br />
+
+    <a href="classes/Spec/Mocks/Proxy.html#M000049">has_negative_expectation? (Spec::Mocks::Proxy)</a><br />
+
+    <a href="classes/Spec/Mocks/ArgumentConstraintMatchers.html#M000036">hash_including (Spec::Mocks::ArgumentConstraintMatchers)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000417">have (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000419">have_at_least (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000420">have_at_most (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000418">have_exactly (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec/Runner/Reporter/Failure.html#M000373">header (Spec::Runner::Reporter::Failure)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000352">heckle (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/HeckleRunner.html#M000380">heckle_class_or_module (Spec::Runner::HeckleRunner)</a><br />
+
+    <a href="classes/Spec/Runner/HeckleRunner.html#M000379">heckle_method (Spec::Runner::HeckleRunner)</a><br />
+
+    <a href="classes/Spec/Runner/HeckleRunner.html#M000378">heckle_with (Spec::Runner::HeckleRunner)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000323">html_header (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000058">ignoring_args? (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMethods.html#M000182">implementation_backtrace (Spec::Example::ExampleMethods)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000421">include (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec/Example/ModuleReopeningFix.html#M000147">include (Spec::Example::ModuleReopeningFix)</a><br />
+
+    <a href="classes/Spec/Example/Configuration.html#M000198">include (Spec::Example::Configuration)</a><br />
+
+    <a href="classes/Spec/Example/ModuleReopeningFix.html#M000146">included (Spec::Example::ModuleReopeningFix)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000149">inherited (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser.html#M000464">init_story (Spec::Story::Runner::StoryParser)</a><br />
+
+    <a href="classes/Spec/Mocks/Mock.html#M000136">inspect (Spec::Mocks::Mock)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMethods.html#M000176">instance_variable_hash (Spec::Example::ExampleMethods)</a><br />
+
+    <a href="classes/Spec/Mocks/BaseExpectation.html#M000086">invoke (Spec::Mocks::BaseExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/BaseExpectation.html#M000089">invoke_consecutive_return_block (Spec::Mocks::BaseExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/BaseExpectation.html#M000087">invoke_method_block (Spec::Mocks::BaseExpectation)</a><br />
+
+    <a href="classes/Spec/Runner/OptionParser.html#M000392">invoke_requires (Spec::Runner::OptionParser)</a><br />
+
+    <a href="classes/Spec/Mocks/BaseExpectation.html#M000090">invoke_return_block (Spec::Mocks::BaseExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/BaseExpectation.html#M000088">invoke_with_yield (Spec::Mocks::BaseExpectation)</a><br />
+
+    <a href="classes/Spec/Runner/SpecParser.html#M000387">is_best_match? (Spec::Runner::SpecParser)</a><br />
+
+    <a href="classes/Spec/Mocks/ArgumentExpectation.html#M000122">is_matcher? (Spec::Mocks::ArgumentExpectation)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000154">it (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000152">it_should_behave_like (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator/Scenario.html#M000537">last_step (Spec::Story::Runner::StoryMediator::Scenario)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator.html#M000529">last_step (Spec::Story::Runner::StoryMediator)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000543">listeners (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Story/Runner/PlainTextStoryRunner.html#M000518">load (Spec::Story::Runner::PlainTextStoryRunner)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000349">load_class (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/ExampleGroupRunner.html#M000401">load_files (Spec::Runner::ExampleGroupRunner)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000343">load_formatters (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000344">load_heckle_runner (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000296">magenta (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Autotest/Rspec.html#M000009">make_test_cmd (Autotest::Rspec)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000422">match (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec/Mocks/BaseExpectation.html#M000085">matches (Spec::Mocks::BaseExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/DuckTypeArgConstraint.html#M000101">matches? (Spec::Mocks::DuckTypeArgConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/HashIncludingConstraint.html#M000040">matches? (Spec::Mocks::HashIncludingConstraint)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMatcher.html#M000207">matches? (Spec::Example::ExampleMatcher)</a><br />
+
+    <a href="classes/Spec/Mocks/AnyArgConstraint.html#M000115">matches? (Spec::Mocks::AnyArgConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/StringArgConstraint.html#M000111">matches? (Spec::Mocks::StringArgConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/MatcherConstraint.html#M000117">matches? (Spec::Mocks::MatcherConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/BooleanArgConstraint.html#M000105">matches? (Spec::Mocks::BooleanArgConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/LiteralArgConstraint.html#M000107">matches? (Spec::Mocks::LiteralArgConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/RegexpArgConstraint.html#M000078">matches? (Spec::Mocks::RegexpArgConstraint)</a><br />
+
+    <a href="classes/Spec/Story/Step.html#M000567">matches? (Spec::Story::Step)</a><br />
+
+    <a href="classes/Spec/Matchers/SimpleMatcher.html#M000431">matches? (Spec::Matchers::SimpleMatcher)</a><br />
+
+    <a href="classes/Spec/Matchers/Exist.html#M000446">matches? (Spec::Matchers::Exist)</a><br />
+
+    <a href="classes/Spec/Mocks/NumericArgConstraint.html#M000139">matches? (Spec::Mocks::NumericArgConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000059">matches_at_least_count? (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000060">matches_at_most_count? (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000061">matches_exact_count? (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMatcher.html#M000209">matches_example_not_considering_modules? (Spec::Example::ExampleMatcher)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMatcher.html#M000208">matches_literal_example? (Spec::Example::ExampleMatcher)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000055">matches_name_but_not_args (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/Proxy.html#M000050">message_received (Spec::Mocks::Proxy)</a><br />
+
+    <a href="classes/Spec/MetaClass.html#M000015">metaclass (Spec::MetaClass)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/ProgressBarFormatter.html#M000280">method_missing (Spec::Runner::Formatter::ProgressBarFormatter)</a><br />
+
+    <a href="classes/Spec/Mocks/Mock.html#M000135">method_missing (Spec::Mocks::Mock)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/ProfileFormatter.html#M000259">method_missing (Spec::Runner::Formatter::ProfileFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000308">method_missing (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Mocks/ExampleMethods.html#M000029">mock (Spec::Mocks::ExampleMethods)</a><br />
+
+    <a href="classes/Spec/Example/Configuration.html#M000197">mock_with (Spec::Example::Configuration)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000319">move_progress (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Test/Unit/TestSuiteAdapter.html#M000611">name (Test::Unit::TestSuiteAdapter)</a><br />
+
+    <a href="classes/Spec/Mocks/NegativeMessageExpectation.html#M000054">negative_expectation_for? (Spec::Mocks::NegativeMessageExpectation)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000075">negative_expectation_for? (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Matchers/Exist.html#M000448">negative_failure_message (Spec::Matchers::Exist)</a><br />
+
+    <a href="classes/Spec/Matchers/SimpleMatcher.html#M000434">negative_failure_message (Spec::Matchers::SimpleMatcher)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000071">never (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseFormatter.html#M000264">new (Spec::Runner::Formatter::BaseFormatter)</a><br />
+
+    <a href="classes/Spec/Story/Runner/IllegalStepError.html#M000515">new (Spec::Story::Runner::IllegalStepError)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryRunner.html#M000510">new (Spec::Story::Runner::StoryRunner)</a><br />
+
+    <a href="classes/Spec/Mocks/LiteralArgConstraint.html#M000106">new (Spec::Mocks::LiteralArgConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/StringArgConstraint.html#M000110">new (Spec::Mocks::StringArgConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/AnyArgConstraint.html#M000113">new (Spec::Mocks::AnyArgConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/MatcherConstraint.html#M000116">new (Spec::Mocks::MatcherConstraint)</a><br />
+
+    <a href="classes/Spec/Story/Runner/ScenarioRunner.html#M000506">new (Spec::Story::Runner::ScenarioRunner)</a><br />
+
+    <a href="classes/Spec/Runner/ExampleGroupRunner.html#M000400">new (Spec::Runner::ExampleGroupRunner)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000331">new (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Mocks/DuckTypeArgConstraint.html#M000100">new (Spec::Mocks::DuckTypeArgConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/ArgumentExpectation.html#M000118">new (Spec::Mocks::ArgumentExpectation)</a><br />
+
+    <a href="classes/Spec/Story/StepMother.html#M000572">new (Spec::Story::StepMother)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000579">new (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/StartingState.html#M000505">new (Spec::Story::Runner::StoryParser::StartingState)</a><br />
+
+    <a href="classes/Spec/Story/GivenScenario.html#M000570">new (Spec::Story::GivenScenario)</a><br />
+
+    <a href="classes/Test/Unit/TestSuiteAdapter.html#M000610">new (Test::Unit::TestSuiteAdapter)</a><br />
+
+    <a href="classes/Spec/Mocks/ErrorGenerator.html#M000091">new (Spec::Mocks::ErrorGenerator)</a><br />
+
+    <a href="classes/Spec/Story/Story.html#M000595">new (Spec::Story::Story)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser.html#M000461">new (Spec::Story::Runner::StoryParser)</a><br />
+
+    <a href="classes/Spec/Runner/Heckler.html#M000358">new (Spec::Runner::Heckler)</a><br />
+
+    <a href="classes/Spec/Story/Scenario.html#M000569">new (Spec::Story::Scenario)</a><br />
+
+    <a href="classes/Spec/Story/Runner/ScenarioCollector.html#M000459">new (Spec::Story::Runner::ScenarioCollector)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/PlainTextFormatter.html#M000218">new (Spec::Runner::Formatter::Story::PlainTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000233">new (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Reporter.html#M000363">new (Spec::Runner::Reporter)</a><br />
+
+    <a href="classes/RCov/VerifyTask.html#M000010">new (RCov::VerifyTask)</a><br />
+
+    <a href="classes/Spec/Expectations/Differs/Default.html#M000018">new (Spec::Expectations::Differs::Default)</a><br />
+
+    <a href="classes/Spec/Mocks/OrderGroup.html#M000128">new (Spec::Mocks::OrderGroup)</a><br />
+
+    <a href="classes/Spec/Mocks/BaseExpectation.html#M000079">new (Spec::Mocks::BaseExpectation)</a><br />
+
+    <a href="classes/Spec/Story/Step.html#M000565">new (Spec::Story::Step)</a><br />
+
+    <a href="classes/Spec/Mocks/RegexpArgConstraint.html#M000077">new (Spec::Mocks::RegexpArgConstraint)</a><br />
+
+    <a href="classes/Spec/Story/StepGroupHash.html#M000564">new (Spec::Story::StepGroupHash)</a><br />
+
+    <a href="classes/Spec/Matchers/SimpleMatcher.html#M000430">new (Spec::Matchers::SimpleMatcher)</a><br />
+
+    <a href="classes/Spec/Runner/Reporter/Failure.html#M000372">new (Spec::Runner::Reporter::Failure)</a><br />
+
+    <a href="classes/Spec/Story/Runner/PlainTextStoryRunner.html#M000516">new (Spec::Story::Runner::PlainTextStoryRunner)</a><br />
+
+    <a href="classes/Spec/Mocks/HashIncludingConstraint.html#M000038">new (Spec::Mocks::HashIncludingConstraint)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000281">new (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Mocks/Mock.html#M000133">new (Spec::Mocks::Mock)</a><br />
+
+    <a href="classes/Spec/Runner/HeckleRunner.html#M000377">new (Spec::Runner::HeckleRunner)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/State.html#M000491">new (Spec::Story::Runner::StoryParser::State)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator.html#M000521">new (Spec::Story::Runner::StoryMediator)</a><br />
+
+    <a href="classes/Autotest/Rspec.html#M000007">new (Autotest::Rspec)</a><br />
+
+    <a href="classes/Spec/Rake/SpecTask.html#M000450">new (Spec::Rake::SpecTask)</a><br />
+
+    <a href="classes/Spec/Runner/HeckleRunner.html#M000382">new (Spec::Runner::HeckleRunner)</a><br />
+
+    <a href="classes/Spec/Runner/SpecParser.html#M000383">new (Spec::Runner::SpecParser)</a><br />
+
+    <a href="classes/Spec/Mocks/NumericArgConstraint.html#M000138">new (Spec::Mocks::NumericArgConstraint)</a><br />
+
+    <a href="classes/Spec/Example/ModuleInclusionWarnings/MethodDispatcher.html#M000141">new (Spec::Example::ModuleInclusionWarnings::MethodDispatcher)</a><br />
+
+    <a href="classes/Test/Unit/TestCase.html#M000619">new (Test::Unit::TestCase)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000307">new (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMatcher.html#M000206">new (Spec::Example::ExampleMatcher)</a><br />
+
+    <a href="classes/Spec/Mocks/Proxy.html#M000042">new (Spec::Mocks::Proxy)</a><br />
+
+    <a href="classes/Spec/Runner/OptionParser.html#M000390">new (Spec::Runner::OptionParser)</a><br />
+
+    <a href="classes/Spec/Matchers/BaseOperatorMatcher.html#M000436">new (Spec::Matchers::BaseOperatorMatcher)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/ProfileFormatter.html#M000254">new (Spec::Runner::Formatter::ProfileFormatter)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator/Story.html#M000538">new (Spec::Story::Runner::StoryMediator::Story)</a><br />
+
+    <a href="classes/Spec/Mocks/NegativeMessageExpectation.html#M000053">new (Spec::Mocks::NegativeMessageExpectation)</a><br />
+
+    <a href="classes/Spec/Example/SharedExampleGroup.html#M000195">new (Spec::Example::SharedExampleGroup)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/NestedTextFormatter.html#M000300">new (Spec::Runner::Formatter::NestedTextFormatter)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator/Scenario.html#M000534">new (Spec::Story::Runner::StoryMediator::Scenario)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator/Step.html#M000532">new (Spec::Story::Runner::StoryMediator::Step)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroup.html#M000191">new (Spec::Example::ExampleGroup)</a><br />
+
+    <a href="classes/Spec/Mocks/BooleanArgConstraint.html#M000103">new (Spec::Mocks::BooleanArgConstraint)</a><br />
+
+    <a href="classes/Spec/Mocks/ArgumentConstraintMatchers.html#M000037">no_args (Spec::Mocks::ArgumentConstraintMatchers)</a><br />
+
+    <a href="classes/Spec/Mocks/Proxy.html#M000043">null_object? (Spec::Mocks::Proxy)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000345">number_of_examples (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/ExampleGroupRunner.html#M000408">number_of_examples (Spec::Runner::ExampleGroupRunner)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000072">once (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/GivenState.html#M000502">one_more_of_the_same (Spec::Story::Runner::StoryParser::GivenState)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/WhenState.html#M000475">one_more_of_the_same (Spec::Story::Runner::StoryParser::WhenState)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/StoryState.html#M000483">one_more_of_the_same (Spec::Story::Runner::StoryParser::StoryState)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/ThenState.html#M000480">one_more_of_the_same (Spec::Story::Runner::StoryParser::ThenState)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/ScenarioState.html#M000478">one_more_of_the_same (Spec::Story::Runner::StoryParser::ScenarioState)</a><br />
+
+    <a href="classes/Spec/Mocks/ErrorGenerator.html#M000092">opts (Spec::Mocks::ErrorGenerator)</a><br />
+
+    <a href="classes/Spec/Runner/OptionParser.html#M000391">order! (Spec::Runner::OptionParser)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000074">ordered (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/ThenState.html#M000482">other (Spec::Story::Runner::StoryParser::ThenState)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/WhenState.html#M000477">other (Spec::Story::Runner::StoryParser::WhenState)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/State.html#M000500">other (Spec::Story::Runner::StoryParser::State)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/StoryState.html#M000489">other (Spec::Story::Runner::StoryParser::StoryState)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/GivenState.html#M000504">other (Spec::Story::Runner::StoryParser::GivenState)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/ThenState.html#M000481">outcome (Spec::Story::Runner::StoryParser::ThenState)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/State.html#M000497">outcome (Spec::Story::Runner::StoryParser::State)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/StoryState.html#M000488">outcome (Spec::Story::Runner::StoryParser::StoryState)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000293">output_to_tty? (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/ClassAndArgumentsParser.html#M000330">parse (Spec::Runner::ClassAndArgumentsParser)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser.html#M000462">parse (Spec::Story::Runner::StoryParser)</a><br />
+
+    <a href="classes/Spec/Runner/OptionParser.html#M000389">parse (Spec::Runner::OptionParser)</a><br />
+
+    <a href="classes/Spec/Story/Step.html#M000568">parse_args (Spec::Story::Step)</a><br />
+
+    <a href="classes/Spec/Runner/SpecParser.html#M000388">parse_backtrace (Spec::Runner::SpecParser)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000338">parse_diff (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/OptionParser.html#M000396">parse_drb (Spec::Runner::OptionParser)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000339">parse_example (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000340">parse_format (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/OptionParser.html#M000394">parse_generate_options (Spec::Runner::OptionParser)</a><br />
+
+    <a href="classes/Spec/Runner/OptionParser.html#M000398">parse_help (Spec::Runner::OptionParser)</a><br />
+
+    <a href="classes/Spec/Runner/OptionParser.html#M000393">parse_options_file (Spec::Runner::OptionParser)</a><br />
+
+    <a href="classes/Spec/Runner/OptionParser.html#M000397">parse_version (Spec::Runner::OptionParser)</a><br />
+
+    <a href="classes/Test/Unit/TestResult.html#M000622">passed? (Test::Unit::TestResult)</a><br />
+
+    <a href="classes/Spec/Example/Pending.html#M000144">pending (Spec::Example::Pending)</a><br />
+
+    <a href="classes/Spec/Runner/Reporter/Failure.html#M000374">pending_fixed? (Spec::Runner::Reporter::Failure)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000320">percent_done (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Story/Step.html#M000566">perform (Spec::Story::Step)</a><br />
+
+    <a href="classes/Spec/Story/GivenScenario.html#M000571">perform (Spec::Story::GivenScenario)</a><br />
+
+    <a href="classes/Spec/Example/Configuration.html#M000199">predicate_matchers (Spec::Example::Configuration)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000153">predicate_matchers (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Runner/ExampleGroupRunner.html#M000403">prepare (Spec::Runner::ExampleGroupRunner)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000165">prepend_after (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Example/Configuration.html#M000203">prepend_after (Spec::Example::Configuration)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000162">prepend_before (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Example/Configuration.html#M000200">prepend_before (Spec::Example::Configuration)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000249">print_step (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Mocks/ArgumentExpectation.html#M000119">process_arg_constraints (Spec::Mocks::ArgumentExpectation)</a><br />
+
+    <a href="classes/Test/Unit/AutoRunner.html#M000621">process_args (Test::Unit::AutoRunner)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser.html#M000463">process_line (Spec::Story::Runner::StoryParser)</a><br />
+
+    <a href="classes/Spec/Mocks/ErrorGenerator.html#M000097">raise_block_failed_error (Spec::Mocks::ErrorGenerator)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000423">raise_error (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec/Mocks/ErrorGenerator.html#M000095">raise_expectation_error (Spec::Mocks::ErrorGenerator)</a><br />
+
+    <a href="classes/Spec/Mocks/ErrorGenerator.html#M000098">raise_missing_block_error (Spec::Mocks::ErrorGenerator)</a><br />
+
+    <a href="classes/Spec/Mocks/ErrorGenerator.html#M000096">raise_out_of_order_error (Spec::Mocks::ErrorGenerator)</a><br />
+
+    <a href="classes/Spec/Mocks/ErrorGenerator.html#M000094">raise_unexpected_message_args_error (Spec::Mocks::ErrorGenerator)</a><br />
+
+    <a href="classes/Spec/Mocks/Proxy.html#M000051">raise_unexpected_message_args_error (Spec::Mocks::Proxy)</a><br />
+
+    <a href="classes/Spec/Mocks/Proxy.html#M000052">raise_unexpected_message_error (Spec::Mocks::Proxy)</a><br />
+
+    <a href="classes/Spec/Mocks/ErrorGenerator.html#M000093">raise_unexpected_message_error (Spec::Mocks::ErrorGenerator)</a><br />
+
+    <a href="classes/Spec/Mocks/ErrorGenerator.html#M000099">raise_wrong_arity_error (Spec::Mocks::ErrorGenerator)</a><br />
+
+    <a href="classes/Spec/Mocks/OrderGroup.html#M000130">ready_for? (Spec::Mocks::OrderGroup)</a><br />
+
+    <a href="classes/Spec/Mocks/Proxy.html#M000048">received_message? (Spec::Mocks::Proxy)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000295">red (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupFactory.html#M000186">register (Spec::Example::ExampleGroupFactory)</a><br />
+
+    <a href="classes/Spec/Mocks/OrderGroup.html#M000129">register (Spec::Mocks::OrderGroup)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000171">register (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Story/Runner.html#M000457">register_listener (Spec::Story::Runner)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000172">registration_backtrace (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000168">remove_after (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000333">remove_example_group (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/State.html#M000498">remove_tag_from (Spec::Story::Runner::StoryParser::State)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000324">report_header (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/ExampleGroupRunner.html#M000405">reporter (Spec::Runner::ExampleGroupRunner)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupFactory.html#M000185">reset (Spec::Example::ExampleGroupFactory)</a><br />
+
+    <a href="classes/Spec/Mocks/Proxy.html#M000047">reset (Spec::Mocks::Proxy)</a><br />
+
+    <a href="classes/Spec/Mocks/Space.html#M000127">reset_all (Spec::Mocks::Space)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000424">respond_to (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec/Example/ModuleInclusionWarnings/MethodDispatcher.html#M000142">respond_to? (Spec::Example::ModuleInclusionWarnings::MethodDispatcher)</a><br />
+
+    <a href="classes/Spec/Example/ModuleInclusionWarnings.html#M000140">respond_to? (Spec::Example::ModuleInclusionWarnings)</a><br />
+
+    <a href="classes/Spec/Runner/ExampleGroupRunner.html#M000406">reverse (Spec::Runner::ExampleGroupRunner)</a><br />
+
+    <a href="classes/Spec/Runner/CommandLine.html#M000409">run (Spec::Runner::CommandLine)</a><br />
+
+    <a href="classes/Spec/Story/Runner/ScenarioRunner.html#M000507">run (Spec::Story::Runner::ScenarioRunner)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000158">run (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Story/Extensions/Main/StoryRunnerStepGroupAdapter.html#M000563">run (Spec::Story::Extensions::Main::StoryRunnerStepGroupAdapter)</a><br />
+
+    <a href="classes/Test/Unit/TestCase.html#M000620">run (Test::Unit::TestCase)</a><br />
+
+    <a href="classes/Spec/Runner/ExampleGroupRunner.html#M000402">run (Spec::Runner::ExampleGroupRunner)</a><br />
+
+    <a href="classes/Spec.html#M000013">run (Spec)</a><br />
+
+    <a href="classes/Spec/Story/Runner/PlainTextStoryRunner.html#M000519">run (Spec::Story::Runner::PlainTextStoryRunner)</a><br />
+
+    <a href="classes/Test/Unit/TestSuiteAdapter.html#M000612">run (Test::Unit::TestSuiteAdapter)</a><br />
+
+    <a href="classes/Spec/Runner/DrbCommandLine.html#M000361">run (Spec::Runner::DrbCommandLine)</a><br />
+
+    <a href="classes/Spec.html#M000012">run? (Spec)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000174">run_after_each (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000173">run_before_each (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000236">run_ended (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/PlainTextFormatter.html#M000227">run_ended (Spec::Runner::Formatter::Story::PlainTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000334">run_examples (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000548">run_given_scenario_with_suspended_listeners (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Story/Story.html#M000597">run_in (Spec::Story::Story)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000234">run_started (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/PlainTextFormatter.html#M000219">run_started (Spec::Runner::Formatter::Story::PlainTextFormatter)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryRunner.html#M000512">run_stories (Spec::Story::Runner::StoryRunner)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator.html#M000531">run_stories (Spec::Story::Runner::StoryMediator)</a><br />
+
+    <a href="classes/Spec/Story/Extensions/Main.html#M000560">run_story (Spec::Story::Extensions::Main)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000425">satisfy (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/StoryState.html#M000485">scenario (Spec::Story::Runner::StoryParser::StoryState)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/ScenarioState.html#M000479">scenario (Spec::Story::Runner::StoryParser::ScenarioState)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/State.html#M000493">scenario (Spec::Story::Runner::StoryParser::State)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000240">scenario_ended (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/PlainTextFormatter.html#M000226">scenario_ended (Spec::Runner::Formatter::Story::PlainTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/PlainTextFormatter.html#M000224">scenario_failed (Spec::Runner::Formatter::Story::PlainTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000244">scenario_failed (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryRunner.html#M000514">scenario_from_current_story (Spec::Story::Runner::StoryRunner)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryRunner.html#M000509">scenario_from_current_story (Spec::Story::Runner::StoryRunner)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000243">scenario_pending (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/PlainTextFormatter.html#M000225">scenario_pending (Spec::Runner::Formatter::Story::PlainTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/PlainTextFormatter.html#M000222">scenario_started (Spec::Runner::Formatter::Story::PlainTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000239">scenario_started (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000242">scenario_succeeded (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/PlainTextFormatter.html#M000223">scenario_succeeded (Spec::Runner::Formatter::Story::PlainTextFormatter)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000161">set_description (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000076">set_expected_received_count (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMethods.html#M000180">set_instance_variables_from_hash (Spec::Example::ExampleMethods)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000356">set_spec_from_line_number (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000169">setup (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Test/Unit/UI/Console/TestRunner.html#M000609">setup_mediator (Test::Unit::UI::Console::TestRunner)</a><br />
+
+    <a href="classes/Test/Unit/UI/Console/TestRunner.html#M000608">setup_mediator_with_rspec (Test::Unit::UI::Console::TestRunner)</a><br />
+
+    <a href="classes/Spec/Extensions/Main.html#M000455">share_as (Spec::Extensions::Main)</a><br />
+
+    <a href="classes/Spec/Extensions/Main.html#M000453">share_examples_for (Spec::Extensions::Main)</a><br />
+
+    <a href="classes/Spec/Example/SharedExampleGroup.html#M000194">shared_example_groups (Spec::Example::SharedExampleGroup)</a><br />
+
+    <a href="classes/Spec/Extensions/Main.html#M000454">shared_examples_for (Spec::Extensions::Main)</a><br />
+
+    <a href="classes/Spec/Expectations/ObjectExpectations.html#M000016">should (Spec::Expectations::ObjectExpectations)</a><br />
+
+    <a href="classes/Spec/Expectations/ObjectExpectations.html#M000017">should_not (Spec::Expectations::ObjectExpectations)</a><br />
+
+    <a href="classes/Spec/Mocks/Methods.html#M000027">should_not_receive (Spec::Mocks::Methods)</a><br />
+
+    <a href="classes/Spec/Mocks/Methods.html#M000026">should_receive (Spec::Mocks::Methods)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000062">similar_messages (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000426">simple_matcher (Spec::Matchers)</a><br />
+
+    <a href="classes/Test/Unit/TestSuiteAdapter.html#M000613">size (Test::Unit::TestSuiteAdapter)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000353">sorted_files (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000354">sorter (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/SpecParser.html#M000384">spec_name_for (Spec::Runner::SpecParser)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000155">specify (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Runner/Reporter.html#M000369">start (Spec::Runner::Reporter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000311">start (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseFormatter.html#M000265">start (Spec::Runner::Formatter::BaseFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/ProfileFormatter.html#M000255">start (Spec::Runner::Formatter::ProfileFormatter)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000552">start_collecting_errors (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/ProfileFormatter.html#M000258">start_dump (Spec::Runner::Formatter::ProfileFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseFormatter.html#M000271">start_dump (Spec::Runner::Formatter::BaseFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/ProgressBarFormatter.html#M000279">start_dump (Spec::Runner::Formatter::ProgressBarFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/HtmlFormatter.html#M000313">start_dump (Spec::Runner::Formatter::HtmlFormatter)</a><br />
+
+    <a href="classes/Test/Unit/UI/Console/TestRunner.html#M000601">started (Test::Unit::UI::Console::TestRunner)</a><br />
+
+    <a href="classes/Test/Unit/UI/Console/TestRunner.html#M000600">started_with_rspec (Test::Unit::UI::Console::TestRunner)</a><br />
+
+    <a href="classes/Spec/Expectations/StringHelpers.html#M000023">starts_with? (Spec::Expectations::StringHelpers)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser.html#M000474">states (Spec::Story::Runner::StoryParser)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000357">stderr? (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/OptionParser.html#M000399">stdout? (Spec::Runner::OptionParser)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000248">step_failed (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/PlainTextFormatter.html#M000231">step_failed (Spec::Runner::Formatter::Story::PlainTextFormatter)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000545">step_mother (Spec::Story::World)</a><br />
+
+    <a href="classes/String.html#M000005">step_name (String)</a><br />
+
+    <a href="classes/Regexp.html#M000001">step_name (Regexp)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000547">step_names (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000247">step_pending (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/PlainTextFormatter.html#M000230">step_pending (Spec::Runner::Formatter::Story::PlainTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000246">step_succeeded (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/PlainTextFormatter.html#M000229">step_succeeded (Spec::Runner::Formatter::Story::PlainTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000245">step_upcoming (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/PlainTextFormatter.html#M000228">step_upcoming (Spec::Runner::Formatter::Story::PlainTextFormatter)</a><br />
+
+    <a href="classes/Spec/Story/Runner/PlainTextStoryRunner.html#M000520">steps (Spec::Story::Runner::PlainTextStoryRunner)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000578">steps (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Story/Story.html#M000599">steps_for (Spec::Story::Story)</a><br />
+
+    <a href="classes/Spec/Story/Extensions/Main.html#M000561">steps_for (Spec::Story::Extensions::Main)</a><br />
+
+    <a href="classes/Spec/Story/StepMother.html#M000574">store (Spec::Story::StepMother)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000549">store_and_call (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator.html#M000522">stories (Spec::Story::Runner::StoryMediator)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/StoryState.html#M000484">story (Spec::Story::Runner::StoryParser::StoryState)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser/State.html#M000492">story (Spec::Story::Runner::StoryParser::State)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000238">story_ended (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/PlainTextFormatter.html#M000221">story_ended (Spec::Runner::Formatter::Story::PlainTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Options.html#M000342">story_formatters (Spec::Runner::Options)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/PlainTextFormatter.html#M000220">story_started (Spec::Runner::Formatter::Story::PlainTextFormatter)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/Story/HtmlFormatter.html#M000237">story_started (Spec::Runner::Formatter::Story::HtmlFormatter)</a><br />
+
+    <a href="classes/Spec/Mocks/ExampleMethods.html#M000030">stub (Spec::Mocks::ExampleMethods)</a><br />
+
+    <a href="classes/Spec/Mocks/Methods.html#M000028">stub! (Spec::Mocks::Methods)</a><br />
+
+    <a href="classes/Spec/Mocks/ExampleMethods.html#M000031">stub_everything (Spec::Mocks::ExampleMethods)</a><br />
+
+    <a href="classes/Class.html#M000003">subclass (Class)</a><br />
+
+    <a href="classes/Test/Unit/TestCase.html#M000616">suite (Test::Unit::TestCase)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000170">teardown (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Test/Unit/UI/Console/TestRunner.html#M000605">test_finished (Test::Unit::UI::Console::TestRunner)</a><br />
+
+    <a href="classes/Test/Unit/UI/Console/TestRunner.html#M000604">test_finished_with_rspec (Test::Unit::UI::Console::TestRunner)</a><br />
+
+    <a href="classes/Test/Unit/TestCase.html#M000618">test_method? (Test::Unit::TestCase)</a><br />
+
+    <a href="classes/Test/Unit/UI/Console/TestRunner.html#M000603">test_started (Test::Unit::UI::Console::TestRunner)</a><br />
+
+    <a href="classes/Test/Unit/UI/Console/TestRunner.html#M000602">test_started_with_rspec (Test::Unit::UI::Console::TestRunner)</a><br />
+
+    <a href="classes/Spec/Runner/Heckler.html#M000359">tests_pass? (Spec::Runner::Heckler)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000588">then (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Matchers.html#M000427">throw_symbol (Spec::Matchers)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000069">times (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator/Step.html#M000533">to_proc (Spec::Story::Runner::StoryMediator::Step)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator/Story.html#M000539">to_proc (Spec::Story::Runner::StoryMediator::Story)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryMediator/Scenario.html#M000535">to_proc (Spec::Story::Runner::StoryMediator::Scenario)</a><br />
+
+    <a href="classes/Spec/Mocks/Mock.html#M000137">to_s (Spec::Mocks::Mock)</a><br />
+
+    <a href="classes/Spec/Story/Runner/StoryParser.html#M000473">transition_to (Spec::Story::Runner::StoryParser)</a><br />
+
+    <a href="classes/Spec/Runner/NoisyBacktraceTweaker.html#M000360">tweak_backtrace (Spec::Runner::NoisyBacktraceTweaker)</a><br />
+
+    <a href="classes/Spec/Runner/QuietBacktraceTweaker.html#M000362">tweak_backtrace (Spec::Runner::QuietBacktraceTweaker)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000073">twice (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Runner.html#M000217">use (Spec::Runner)</a><br />
+
+    <a href="classes/Spec/Story/World.html#M000546">use (Spec::Story::World)</a><br />
+
+    <a href="classes/Spec/Story/StepMother.html#M000573">use (Spec::Story::StepMother)</a><br />
+
+    <a href="classes/Spec/Mocks/Space.html#M000126">verify_all (Spec::Mocks::Space)</a><br />
+
+    <a href="classes/Spec/Runner/HeckleRunner.html#M000381">verify_constant (Spec::Runner::HeckleRunner)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000056">verify_messages_received (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Example/ExampleMethods.html#M000177">violated (Spec::Example::ExampleMethods)</a><br />
+
+    <a href="classes/Spec/Mocks/ArgumentExpectation.html#M000120">warn_deprecated (Spec::Mocks::ArgumentExpectation)</a><br />
+
+    <a href="classes/Spec/Story/StepGroup.html#M000587">when (Spec::Story::StepGroup)</a><br />
+
+    <a href="classes/Spec/Mocks/MessageExpectation.html#M000065">with (Spec::Mocks::MessageExpectation)</a><br />
+
+    <a href="classes/Spec/Story/Extensions/Main.html#M000562">with_steps_for (Spec::Story::Extensions::Main)</a><br />
+
+    <a href="classes/Spec/Runner/OptionParser.html#M000395">write_generated_options (Spec::Runner::OptionParser)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000156">xit (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Example/ExampleGroupMethods.html#M000157">xspecify (Spec::Example::ExampleGroupMethods)</a><br />
+
+    <a href="classes/Spec/Runner/Formatter/BaseTextFormatter.html#M000297">yellow (Spec::Runner::Formatter::BaseTextFormatter)</a><br />
+
+  </div>
+</div>
+</body>
+</html>
+

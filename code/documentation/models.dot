@@ -1,0 +1,8 @@
+digraph models_diagram {
+  graph[overlap=false, splines=true]
+  "Account" [shape=Mrecord, label="Account"]
+  "Customer" [shape=Mrecord, label="Customer"]
+  "Customer" -> "Account" [
+    arrowtail=odot, arrowhead=dot, dir=both
+  ]
+}

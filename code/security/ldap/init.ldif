@@ -1,0 +1,23 @@
+# Create the EnterpriseRecipes organization.
+dn: dc=enterpriserecipes,dc=com
+objectclass: dcObject
+objectclass: organization
+o: EnterpriseRecipes
+dc: enterpriserecipes
+
+# Create some users.
+dn:cn=Maik Schmidt,dc=enterpriserecipes,dc=com
+objectclass: top
+objectclass: inetOrgPerson
+cn: Maik Schmidt
+sn: Schmidt
+mail: Maik.Schmidt@example.com
+userPassword: maik123
+
+dn:cn=Jane Rodriguez,dc=enterpriserecipes,dc=com
+objectclass: top
+objectclass: inetOrgPerson
+cn: Jane Rodriguez
+sn: Rodriguez
+mail: jane@example.com
+userPassword: booze

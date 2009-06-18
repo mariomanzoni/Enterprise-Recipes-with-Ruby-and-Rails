@@ -1,0 +1,21 @@
+<% if @xactions.size == 0 %>
+  <p>Currently, there are no transactions.</p>
+<% else %>
+  <table>
+    <tr>
+      <th>Transaction ID</th>
+      <th>Credit Card Reference</th>
+      <th>Amount</th>
+      <th>Text</th>
+    </tr>
+    <% for xaction in @xactions %>
+      <tr>
+        <td><%= xaction.xaction_id %></td>
+        <td><%= xaction.cc_ref %></td>
+        <% sign = (xaction.type == 'purchase') ? '+' : '-' %>
+        <td><%= sign + number_to_currency(xaction.amount) %></td>
+        <td><%= xaction.text %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>

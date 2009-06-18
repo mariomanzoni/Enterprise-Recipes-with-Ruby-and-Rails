@@ -1,0 +1,11 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  database: shop
+  username: maik
+  password: t0p$ecret
+
+customer_db:
+  adapter: oracle
+  username: maik
+  password: t0p$ecret

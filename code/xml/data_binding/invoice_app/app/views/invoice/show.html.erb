@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Invoice #<%= @invoice.invoice_no %></title>
+    <%= stylesheet_link_tag 'invoice', :media => 'screen' %>
+  </head>
+  <body>
+    <p>Dear <%= @invoice.customer.name %>,</p>
+    <p>  
+      Thank you very much for shopping with ACME!
+    </p>
+    <table width="100%" border="1" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr>
+          <td>
+            <span style="font-weight:bold; padding-left: 15px">Invoice #<%= @invoice.invoice_no %> (<%= @invoice.invoice_date %>)</span>
+          </td>
+        </tr>
+        <tr>
+          <table border="1" width="100%" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="15%" valign="top">
+                  <div id="invoiceaddress">
+                    Billing Address:<br/><br/>
+                    <%= @invoice.customer.name %><br/>
+                    Customer <%= @invoice.customer.customer_no %><br/>
+                    <%= @invoice.customer.address.street %><br/>
+                    <%= @invoice.customer.address.postal_code %>, <%= @invoice.customer.address.city %>
+                  </div>
+                </td>
+                <td valign="top">
+                  <!-- START:inner_table -->
+                  <table width="100%" id="invoicetable">
+                    <tbody>
+                      <tr>
+                        <th> Product ID </th>
+                        <th> Product Name </th>
+                        <th> Unit Price </th>
+                        <th> Quantity </th>
+                        <th> Net Amount </th>
+                        <th> VAT </th>
+                        <th> Gross Amount </th>
+                      </tr>
+                      <% for item in @invoice.items %>
+                      <tr class="<%= cycle('odd', 'even') %>">
+                        <td><%= item.product_id %></td>
+                        <td><%= item.name %></td>
+                        <td><%= number_to_currency(item.unit_price.amount) %></td>
+                        <td><%= item.quantity %></td>
+                        <td><%= number_to_currency(item.net_amount.amount) %></td>
+                        <td><%= item.vat %>%</td>
+                        <td><%= number_to_currency(item.gross_amount.amount) %></td>
+                      </tr>
+                      <% end %>
+                      <tr class="divider">
+                        <td colspan="6">&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr class="total">
+                        <td colspan="6" align="right"><b>Total</b></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr class="total">
+                        <td colspan="6" align="right">VAT: </td>
+                        <td><%= number_to_currency(@invoice.vat.amount.amount) %></td>
+                      </tr>
+                      <tr class="total">
+                        <td align="right" colspan="6">Net Amount: </td>
+                        <td><%= number_to_currency(@invoice.net_amount.amount) %></td>
+                      </tr>
+                      <tr class="total">
+                        <td align="right" colspan="6"><b>Gross Amount: </b></td>
+                        <td style="border-top: 1px dotted black">
+                          <u>
+                            <b>
+                              <%= number_to_currency(@invoice.gross_amount.amount) %>
+                            </b>
+                          </u>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- END:inner_table -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </tr>
+      </tbody>
+    </table>
+    <p>Please, pay by <%= @invoice.due_date %>.</p>
+    <p>
+      Best Regards,<br/><br/>
+      ACME
+    </p>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+This directory contains all sample code used in the "High-Performance
+Parsing" recipe.
+
+To start the performance test do the following:
+
+$ ruby performance_test.rb
+
+You can pass the amount of test data sets to be created on the command line.
+Default is 1000.
+
+To start the credit card transaction demo do the following:
+
+$ cd ccdemo
+$ ruby script/server
+
+Now point your browser to
+
+http://localhost:3000/credit_card_transaction/show/2537403
+
+Happy Hacking!
+
+Maik

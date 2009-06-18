@@ -1,0 +1,11 @@
+%html
+  %head
+    %title Our Fancy Catalog
+    %link{:rel => 'stylesheet', :href => '/screen.css', |
+      :type => 'text/css', :media => 'screen'}          |
+  %body
+    %h2 Our Catalog:
+    #content
+      %ol
+        = list_of(@products) do |p|
+          = "#{p.name} ($#{p.price})"

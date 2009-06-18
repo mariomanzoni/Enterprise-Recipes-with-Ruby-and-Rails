@@ -1,0 +1,7 @@
+<% form_for :order, @order, :url => { :controller => :purchase, :action => 'checkout' } do |f| %>
+  <label>Choose Product:</label><br/>
+  <%= f.select :product, [['Paper Book', 'paper'], ['E-Book', 'ebook']] %>
+  <br/>
+  <br/>
+  <%= f.submit 'Checkout' %>
+<% end %>

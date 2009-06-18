@@ -1,0 +1,19 @@
+<h2>Status of Order <%= @order.id %></h2>
+<table>
+  <tr>
+    <td>Customer:</td>
+    <td><%= @order.customer %></td>
+  </tr>
+  <tr>
+    <td>Product:</td>
+    <td><%= @order.product %></td>
+  </tr>
+  <tr>
+    <td>Quantity:</td>
+    <td><%= @order.quantity %></td>
+  </tr>
+  <tr>
+    <td>Status:</td>
+    <td><b><%= @order.status %></b></td>
+  </tr>
+</table>

@@ -1,0 +1,15 @@
+<% if @vcard.nil? %>
+  <p>We could not import you Vcard.</p>
+<% else %>
+  <p>Your Vcard has been imported successfully:</p>
+  <p>
+    <%= link_to @vcard.fn, @vcard.url %><br/>
+    <%= @vcard.adr.street_address %><br/>
+    <%= @vcard.adr.postal_code %> <%= @vcard.adr.locality %><br/>
+    <%= @vcard.adr.country_name %><br/>
+  </p>
+  <p>
+    Email: <%= @vcard.email %><br/>
+    Phone: +<%= @vcard.tel %>
+  </p>
+<% end %>

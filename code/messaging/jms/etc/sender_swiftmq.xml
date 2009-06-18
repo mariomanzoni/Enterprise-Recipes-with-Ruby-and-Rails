@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+ ! Excerpted from "Enterprise Recipes for Ruby and Rails",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/msenr for more book information.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:lang="http://www.springframework.org/schema/lang"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/lang
+http://www.springframework.org/schema/lang/spring-lang-2.0.xsd">
+
+  <bean id="messageSender" class="com.example.messaging.MessageSender">
+    <property name="destination" ref="order-sender"/>
+  </bean>
+
+  <bean id="swiftmq-initial-context" class="javax.naming.InitialContext">
+    <constructor-arg>
+      <props>                                       
+        <prop key="java.naming.provider.url">smqp://localhost:4001/host2=localhost;port2=4001;reconnect=true;maxretries=50</prop>
+        <prop key="java.naming.factory.initial">com.swiftmq.jndi.InitialContextFactoryImpl</prop>
+      </props>
+    </constructor-arg>
+  </bean>
+	
+  <bean id="mq-connection-factory" factory-bean="swiftmq-initial-context" factory-method="lookup">
+    <constructor-arg value="ConnectionFactory"/>
+  </bean>
+
+  <bean id="order-sender" class="org.springframework.jms.core.JmsTemplate">
+    <property name="connectionFactory"      ref="mq-connection-factory"/>
+    <property name="defaultDestinationName" value="testqueue@router1"/>
+  </bean>
+</beans>

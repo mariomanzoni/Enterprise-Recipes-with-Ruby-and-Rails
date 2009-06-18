@@ -1,0 +1,8 @@
+LOCATION;DATE;COND_DAY;COND_NIGHT;TEMP_MAX;TEMP_MIN;RAIN_PROBABILITY
+"Duisburg";20080721;"Sunny";"Cloudy";27.8;19.1;0
+"Duisburg";20080722;"Showers";"Showers";25.2;19.9;70
+"Duisburg";20080723;"Mostly sunny";"Showers";25.2;16.4;20
+"Duisburg";20080724;"Mostly sunny";"Showers";25.3;16.5;0
+"Duisburg";20080725;"Late shower";"Late shower";25.7;19.2;70
+"Duisburg";20080726;"Mostly sunny";"Cloudy";25.2;18.4;40
+"Duisburg";20080727;"Late shower";"Late shower";27.3;20.8;60

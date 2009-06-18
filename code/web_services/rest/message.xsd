@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="message" type="ShortMessageType"/>
+  
+  <xs:element name="messages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name='message' type='ShortMessageType'
+                    minOccurs='0' maxOccurs='unbounded'/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:complexType name="ShortMessageType">
+    <xs:sequence>
+      <xs:element name='sender' type='MsisdnType'/>
+      <xs:element name='receiver' type='MsisdnType'/>
+      <xs:element name='content' type='xs:string'/>
+    </xs:sequence>
+    
+    <xs:attribute name="id" type="xs:token"/>
+    <xs:attribute name="status" type="ShortMessageStatusType"/>
+    <xs:attribute name="created-at" type="xs:dateTime"/>
+  </xs:complexType>
+    
+  <xs:complexType name="MsisdnType">
+    <xs:attribute name="phone-number" type="xs:token" use="required"/>
+  </xs:complexType>
+    
+  <xs:simpleType name="ShortMessageStatusType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="transmitted"/>
+      <xs:enumeration value="not-transmitted"/>
+      <xs:enumeration value="in-transmission"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

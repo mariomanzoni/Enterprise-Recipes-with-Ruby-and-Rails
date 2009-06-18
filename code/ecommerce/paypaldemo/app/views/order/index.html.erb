@@ -1,0 +1,13 @@
+<% form_for :order, @order, :url => {
+    :controller => :purchase ,
+    :action => :express_checkout } do |f| %>
+  <label>Choose a Screencast:</label><br/>
+  <br/>
+  <%= f.select :product,
+    [
+      ['Rails Screencast', 'rails'], ['Erlang Screencast', 'erlang']
+    ] %>
+  <br/><br/>
+  <input type='image'
+         src="<%= image_path('btn_xpressCheckout.gif') %>">
+<% end %>

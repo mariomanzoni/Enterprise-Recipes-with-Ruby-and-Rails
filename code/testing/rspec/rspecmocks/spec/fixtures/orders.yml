@@ -1,0 +1,5 @@
+beer:
+  id: 1
+  product: Beer
+  quantity: 6
+  tracking_number: 42-xyz-4711

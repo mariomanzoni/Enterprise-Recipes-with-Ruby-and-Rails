@@ -1,0 +1,24 @@
+<h1>Create New Order</h1>
+
+<%= error_messages_for :order %>
+
+<% form_for :order do |f| %>
+  <p>
+    <b>Customer Name:</b><br />
+    <%= f.text_field :customer %>
+  </p>
+
+  <p>
+    <b>Product:</b><br />
+    <%= f.text_field :product %>
+  </p>
+
+  <p>
+    <b>Quantity:</b><br />
+    <%= f.text_field :quantity %>
+  </p>
+
+  <p>
+    <%= f.submit 'Submit Order' %>
+  </p>
+<% end %>

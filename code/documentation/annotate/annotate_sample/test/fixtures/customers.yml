@@ -1,0 +1,22 @@
+# == Schema Information
+# Schema version: 2
+#
+# Table name: customers
+#
+#  id         :integer         not null, primary key
+#  forename   :string(255)
+#  surname    :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  forename: MyString
+  surname: MyString
+
+two:
+  forename: MyString
+  surname: MyString
+

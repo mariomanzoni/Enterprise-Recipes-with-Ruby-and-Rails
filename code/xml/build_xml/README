@@ -1,0 +1,23 @@
+This directory contains all sample code used in the following recipes
+
+* "Build Plain-Vanilla XML Documents"
+* "Build Arbitrary XML Documents"
+
+Run them as follows:
+
+$ rake db:migrate
+$ ruby script/server
+
+Now point your browser (or curl, or wget) to
+
+http://localhost:3000/customer/show/1
+
+run the Builder example and to
+
+http://localhost:3000/customer/show_flexible/1
+
+to run the "homebrew" solution.
+
+Happy Hacking!
+
+Maik

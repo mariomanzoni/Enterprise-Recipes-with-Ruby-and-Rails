@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  order_id: 1
+  amount: 1
+  description: MyString
+  xaction_id: MyString
+
+two:
+  order_id: 1
+  amount: 1
+  description: MyString
+  xaction_id: MyString

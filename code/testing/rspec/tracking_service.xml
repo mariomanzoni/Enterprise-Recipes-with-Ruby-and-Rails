@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ ! Excerpted from "Enterprise Recipes for Ruby and Rails",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/msenr for more book information.
+-->
+<package-history id="42-xyz-4711">
+  <steps>
+    <step ts="2008-10-09 00:45">Received package</step>
+    <step ts="2008-10-10 08:23">First delivery attempt</step>
+    <step ts="2008-10-10 08:24">Receiver not at home</step>
+    <step ts="2008-10-11 09:51">Second delivery attempt</step>
+    <step ts="2008-10-11 09:53">Delivered</step>
+  </steps>
+  <state>delivered</state>
+</package-history>

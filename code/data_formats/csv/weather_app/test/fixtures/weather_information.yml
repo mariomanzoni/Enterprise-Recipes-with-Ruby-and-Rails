@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  location: MyString
+  date: 2008-08-03
+  condition_day: MyString
+  condition_night: MyString
+  temp_max: 1.5
+  temp_min: 1.5
+  rain_probability: 
+
+two:
+  location: MyString
+  date: 2008-08-03
+  condition_day: MyString
+  condition_night: MyString
+  temp_max: 1.5
+  temp_min: 1.5
+  rain_probability: 

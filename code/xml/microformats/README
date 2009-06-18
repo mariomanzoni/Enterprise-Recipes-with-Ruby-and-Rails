@@ -1,0 +1,21 @@
+This directory contains all sample code used in the "Working with HTML and
+Microformats" recipe.
+
+To start the demo do the following:
+
+$ cd vcard_demo
+$ ruby script/server
+
+Now point your browser to
+
+http://localhost:3000/vcard/import?external_url=http://localhost:3000/hcard/maik.html
+
+to try the Hpricot approach or point it to
+
+http://localhost:3000/vcard/import_mofo?external_url=http://localhost:3000/hcard/maik.html
+
+to use mofo.
+
+Happy Hacking!
+
+Maik

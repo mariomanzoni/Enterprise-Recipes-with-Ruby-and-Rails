@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Weather Information Service</title>
+  </head>
+  
+  <body>
+    <p>What do you want to do?</p>
+
+    <!-- START:upload_form -->    
+    <% form_for :weather_data, @weather_data,
+      :url  => { :action    => 'import' },
+      :html => { :multipart => true } do |f| %>
+      
+      <label for='weather_data_file_data'>Import File:</label>
+      <%= f.file_field :file_data %><br/> 
+      <%= submit_tag 'Import' %> 
+    <% end %> 
+    <!-- END:upload_form -->    
+  </body>
+</html>
