@@ -1,6 +1,5 @@
 Here's a list of the gems that are installed on my computer and that I've
 used to run the book's samples:
-_________________________________________________________________________
 
 actionmailer (2.1.1)
 actionpack (2.1.1)
